@@ -1,10 +1,15 @@
 package com.exercises;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        double precio = 100.0;
+        Scanner precio1 = new Scanner(System.in);
+        System.out.println("Introduce un precio:");
+
+        int precio = precio1.nextInt();
         double precioConIVA = getPrecioConIVA(precio);
-        System.out.println("Precio con IVA: " + precioConIVA);
+        System.out.println("Tu precio es: " + precioConIVA);
 
 
     }
